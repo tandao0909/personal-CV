@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: Python Software Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  photo:
+  phone: +84 839782709
+  website:
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+  sections:
+    summary:
+      - Python software engineer with experience building and improving production systems across trading infrastructure and AI applications. Delivered latency improvements for an internal DSL-based backtest pipeline, built supporting scheduling, monitoring, and API components, and worked hands-on with Kafka, Postgres, Redis, Docker, and Linux. Earlier experience includes LLM/VLM evaluation, model serving, and applied AI feature delivery.
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics and CS
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: present
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+    experience:
+      - company: Trading startup
+        position: Python Software Engineer
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh City
+        summary: Python, Kafka, Postgres, Redis, Docker, Linux
+        highlights:
+          - Inherited and improved an in-house backtest pipeline built around an internally developed DSL for trading strategy evaluation
+          - Reduced critical-path processing time to under 1 second by optimizing pipeline execution and data flow
+          - Built and maintained data acquisition and processing components to support backtest inputs and downstream system reliability
+          - Implemented commission calculation logic and overnight fee conventions using IBKR documentation as the reference standard
+          - Handled backend responsibilities across scheduling, monitoring, and API development for internal platform workflows
+      - company: AcamarAI
+        position: AI Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2025-12
+        location: Ho Chi Minh
+        summary: Python, FastAPI, VLM, LLM, LangChain, vLLM, PyTorch
+        highlights:
+          - Evaluated and tested LLM and VLM outputs for accuracy, performance, and quality assurance
+          - Performed model fine-tuning and dataset preparation to improve inference accuracy and reduce latency
+          - Conducted comprehensive testing of AI-generated responses and implemented quality assurance protocols
+          - Engineered and deployed self-hosted LLMs using FastAPI and LangChain with vLLM for optimized inference
+          - Developed 3 out of 14 core AI functionalities for Fortune 500 beta user companies
+    certifications:
+      - bullet: IELTS 6.5 (2022)
+      - bullet: GPA 3.74/4.0 (2022-Present)
+    skills:
+      - label: Programming
+        details: Python, SQL, JavaScript, TypeScript
+      - label: Data & Backend Systems
+        details: Kafka, Postgres, Redis, REST APIs, scheduling, monitoring, Docker, Linux
+      - label: Trading Infrastructure
+        details: Backtest pipelines, internal DSL workflows, commission calculation, overnight fee conventions, IBKR references
+      - label: AI/ML Technologies
+        details: LLM, VLM, FastAPI, LangChain, vLLM, PyTorch, model evaluation, fine-tuning, dataset preparation
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5 - Working Proficiency)
+design:
+  theme: classic
+locale:
+  language: english
+settings:
+  current_date: "2026-03-16"
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output_bytedance/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output_bytedance/NAME_IN_SNAKE_CASE_CV.pdf
