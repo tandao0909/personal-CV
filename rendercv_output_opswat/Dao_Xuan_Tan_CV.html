@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Software engineer who builds, tests, and reviews with agentic AI coding tools (Claude Code, Cursor, Codex) every day and verifies their output before it ships. Backed by production <strong>Python</strong>, large-scale data pipelines, and applied ML (classification, embeddings, evaluation), with a habit of chasing quality problems down to their root cause.</p>
+        <h1>Experience</h1>
+        <h2><strong>Pi Associates</strong>, Software Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>7 months</p>
+        <p>Python, PostgreSQL, SQL, Kafka, Redis, Docker, Kubernetes, GCP, GitHub Actions, Grafana</p>
+        <ul>
+        <li>
+        <p>Main developer responsible for an internal <strong>Python</strong> data and backtesting package, used by about 20 researchers and engineers running <strong>tens of thousands</strong> of runs a day</p>
+        </li>
+        <li>
+        <p>Build, test, and review features daily with agentic AI coding tools (<strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>Codex</strong>), verifying every change against tests and real data before merging</p>
+        </li>
+        <li>
+        <p>Built and improved data pipelines over <strong>PostgreSQL</strong> (schema design and SQL queries), <strong>Redis</strong> caching, and a <strong>Kafka</strong> producer feeding signals to downstream consumers</p>
+        </li>
+        <li>
+        <p>Traced and fixed a silent production memory leak no one had caught, cutting peak memory from <strong>200+ GB to under 20 GB</strong> by finding the root cause and shipping the fix</p>
+        </li>
+        <li>
+        <p>Cut runtime from <strong>minutes to under 10 seconds</strong> on <strong>1-5 GB</strong> of data per run through parallelism, vectorization, and algorithmic improvements</p>
+        </li>
+        <li>
+        <p>Ran jobs as Dockerized <strong>Kubernetes</strong> workloads on <strong>GCP</strong> and <strong>Linux</strong>, with <strong>GitHub Actions</strong> CI/CD and <strong>Grafana</strong> production monitoring</p>
+        </li>
+        <li>
+        <p>Improved reliability with stronger error handling and input validation, cutting failed runs and manual debugging</p>
+        </li>
+        </ul>
+        <h2><strong>AcamarAI</strong>, AI Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>8 months</p>
+        <p>Python, LLM, classification, entity resolution, embeddings, evaluation, RAG, vLLM</p>
+        <ul>
+        <li>
+        <p>Built <strong>classification</strong> and <strong>entity-resolution</strong> workflows that combine deterministic rules with <strong>LLMs</strong> for reliable data processing in production</p>
+        </li>
+        <li>
+        <p>Built <strong>evaluation harnesses</strong>, automated output scoring on metrics like <strong>recall@k</strong> and <strong>LLM-as-judge</strong> plus human-in-the-loop review, to measure and improve detection quality</p>
+        </li>
+        <li>
+        <p>Built retrieval and <strong>RAG</strong> pipelines over structured and unstructured data, parsing and chunking documents and indexing them with <strong>BGE</strong> embeddings</p>
+        </li>
+        <li>
+        <p>Deployed self-hosted <strong>LLM</strong> inference (<strong>vLLM</strong>) behind an OpenAI-compatible API for internal AI features</p>
+        </li>
+        <li>
+        <p>Owned <strong>3</strong> production AI features end to end, out of <strong>14</strong> core features, for Fortune 500 beta users</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>AI-Native Development:</strong> Claude Code, Cursor, Copilot and Codex agentic coding and review, prompt engineering, LLM APIs (OpenAI, Claude, Gemini), verifying and testing AI output</p>
+        <p><strong>ML &amp; Data Intelligence:</strong> classification, entity resolution, embeddings (BGE), RAG, evaluation metrics (recall@k, LLM-as-judge)</p>
+        <p><strong>Languages &amp; CS:</strong> Python (asyncio, typing, packaging with uv), C++ (coursework and competitive programming), SQL, data structures and algorithms</p>
+        <p><strong>Backend &amp; Data Pipelines:</strong> FastAPI, REST and async APIs, PostgreSQL, Redis, Kafka, Pandas, large-scale data pipelines, parsing structured and unstructured data</p>
+        <p><strong>Infra &amp; DevOps:</strong> Docker, Kubernetes, GCP, Linux, GitHub Actions CI/CD, Grafana, Git, Pytest</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics and Computer Science, Data Science track</h2>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Sept 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0 (3.74/4.0)</li>
+        </ul>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.7/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: AI Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  phone: +84 839 782 709
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Đào Xuân Tân
+      url: https://www.linkedin.com/in/t%C3%A2n-%C4%91%C3%A0o-xu%C3%A2n-9a717b305/
+  sections:
+    summary:
+      - AI engineer building production LLM data pipelines, classification, entity resolution, and evaluation on top of Python, PostgreSQL, and SQL. Strong on data quality and finding the silent bugs others miss, with solid backend and production-observability foundations.
+    experience:
+      - company: Pi Associates
+        position: Software Engineer
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh
+        summary: Python, PostgreSQL, SQL, Kafka, Redis, Docker, Kubernetes, GCP, GitHub Actions, Grafana
+        highlights:
+          - Main developer responsible for an internal **Python** data and backtesting package, used by about 20 researchers and engineers running **tens of thousands** of runs a day
+          - Audited and fixed a silent production memory leak no one had caught, cutting peak memory from **200+ GB to under 20 GB**, treating the silent bug as a real failure, tracing root cause, and shipping the fix
+          - Cut runtime from **minutes to under 10 seconds** on **1-5 GB** of data per run through parallelism, vectorization, and algorithmic improvements
+          - Worked across **PostgreSQL** (schema design and SQL queries), **Redis** caching, and a **Kafka** producer feeding downstream consumers
+          - Ran jobs as Dockerized **Kubernetes** workloads on **GCP**, with **GitHub Actions** CI/CD and **Grafana** production monitoring
+      - company: AcamarAI
+        position: AI Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2026-01
+        location: Ho Chi Minh
+        summary: Python, LLM, classification, entity resolution, evaluation, vLLM, RAG
+        highlights:
+          - Built **classification and entity-resolution** workflows that combine deterministic rules with **LLMs** for reliable, production data processing
+          - Built **evaluation harnesses**, automated output scoring plus human-in-the-loop review, to measure and improve output quality
+          - Deployed self-hosted **LLM** inference (**vLLM**) behind an OpenAI-compatible API for internal AI features
+          - Owned **3** production AI features end to end (of **14** core features) for Fortune 500 beta users
+    skills:
+      - label: LLM & Data Intelligence
+        details: classification, entity resolution, RAG, prompt engineering, output evaluation, vLLM, OpenAI-compatible APIs
+      - label: Backend & Data
+        details: Python, SQL, PostgreSQL, FastAPI, Redis, Kafka, data pipelines
+      - label: DevOps & Observability
+        details: Docker, Kubernetes, GCP, GitHub Actions CI/CD, Grafana
+      - label: ML
+        details: PyTorch, fine-tuning, dataset preparation, model evaluation
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5)
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics and Computer Science, Data Science track
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: 2026-12
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+design:
+  theme: classic
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    font_size:
+      name: 24pt
+      section_titles: 1.2em
+  header:
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+locale:
+  language: english
+settings:
+  current_date: "2026-06-22"
+  pdf_title: NAME's CV
+  render_command:
+    output_folder: rendercv_output_clarium

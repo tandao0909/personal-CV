@@ -1,0 +1,92 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.7/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: MLOps Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  phone: +84 839 782 709
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Đào Xuân Tân
+      url: https://www.linkedin.com/in/t%C3%A2n-%C4%91%C3%A0o-xu%C3%A2n-9a717b305/
+  sections:
+    summary:
+      - MLOps engineer building and optimizing production ML systems across model lifecycle, data and embedding pipelines, low-latency model serving, evaluation metrics, and monitoring. Track record of profiling large-scale pipelines, hunting bottlenecks, and cutting latency at scale on strong Python and algorithms and data-structures foundation; quick to pick up new languages and technology.
+    experience:
+      - company: Pi Associates
+        position: Software Engineer, Compute Platform
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh
+        summary: Python, asyncio, multiprocessing, Kafka, PostgreSQL, Redis, Docker, Kubernetes, GCP, Grafana
+        highlights:
+          - Own internal **Python** compute platform running **tens of thousands** of quant model backtest and evaluation **jobs daily** for about **20** researchers
+          - Investigated pipeline, **identified bottlenecks**, and cut runtime from **minutes to under 10 seconds** on **1 to 5 GB** per run through **parallelism**, vectorization, and algorithmic improvements
+          - Designed **concurrent execution model** (**asyncio** plus **process pool**) to maximize **job throughput** under heavy parallel load
+          - Built **Kafka** producer streaming model signals to downstream consumers, production **data-pipeline component** feeding real-time systems
+          - Ran jobs as Dockerized **Kubernetes** workloads across **GCP** and on-premise, with **GitHub Actions** CI/CD and **Grafana** monitoring
+          - Hardened reliability with stronger error handling and input validation, reducing failed runs and manual debugging
+      - company: AcamarAI
+        position: AI/ML Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2026-01
+        location: Ho Chi Minh
+        summary: Python, vLLM, model serving, data pipelines, evaluation, LoRA, FastAPI, PyTorch
+        highlights:
+          - Served self-hosted **Qwen** models with **vLLM** on single **A100 80GB** behind **OpenAI-compatible API**, delivering **low-latency serving** (about **1s TTFT**, **200 tok/s** aggregate)
+          - Built ingestion and **embedding data pipelines** (chunking strategies, **BGE** embeddings, **ColPali** for document images) feeding self-hosted vector store over **millions of vectors**
+          - Developed **evaluation metrics and harnesses**, **recall@k** and **LLM-as-judge**, to measure and improve model output quality
+          - Fine-tuned task-specific models with **LoRA** and shipped **3 of 14** core AI features for Fortune 500 beta users via **async FastAPI** with **SSE** streaming
+    skills:
+      - label: Model Serving & Optimization
+        details: vLLM, self-hosted Qwen, OpenAI-compatible APIs, low-latency and high-throughput serving, LoRA fine-tuning, GPU (A100)
+      - label: Data & ML Pipelines
+        details: ingestion and embedding pipelines, Kafka streaming, batch and compute jobs, vector indexing (Qdrant), evaluation harnesses (recall@k, LLM-as-judge)
+      - label: Performance & Scale
+        details: multiprocessing and parallelism (asyncio + process pool), vectorization, profiling, latency and throughput optimization, algorithms and data structures
+      - label: Backend & APIs
+        details: Python, FastAPI, asyncio, SSE streaming, REST APIs, Pydantic validation, PostgreSQL, Redis
+      - label: Infra & MLOps
+        details: Docker, Kubernetes, GCP, on-premise, GitHub Actions CI/CD, Grafana
+      - label: Tools
+        details: AI-assisted development (Claude Code, Cursor, Codex), Git, uv
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5)
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics & Computer Science (Data Science)
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: 2026-12
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+design:
+  theme: classic
+  page:
+    show_top_note: false
+    top_margin: 0.4in
+    bottom_margin: 0.4in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    font_size:
+      name: 24pt
+      section_titles: 1.2em
+  header:
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+locale:
+  language: english
+settings:
+  current_date: "2026-07-06"
+  pdf_title: NAME's CV
+  render_command:
+    output_folder: rendercv_output_knorex

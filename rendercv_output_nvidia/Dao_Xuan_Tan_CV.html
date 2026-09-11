@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Software engineer building high-performance, GPU-backed AI systems on Linux. Production computer vision and deep learning with PyTorch (SAM, Grounding DINO, VLM, LoRA), on a systems core of concurrency, memory management, and profiling; cut peak memory from 200+ GB to under 20 GB and runtime from minutes to under 10 seconds. Strong CS fundamentals, with C++ from coursework and competitive programming, and quick to pick up new languages.</p>
+        <h1>Experience</h1>
+        <h2><strong>Pi Associates</strong>, Software Engineer, Compute Platform</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>7 months</p>
+        <p>Python, asyncio, multiprocessing, PostgreSQL, Kafka, Redis, Docker, Kubernetes, Linux, GCP</p>
+        <ul>
+        <li>
+        <p>Main developer of an internal <strong>Python</strong> compute platform running <strong>tens of thousands</strong> of jobs a day for about <strong>20</strong> researchers and engineers</p>
+        </li>
+        <li>
+        <p>Diagnosed and fixed a critical <strong>memory leak</strong>, cutting peak memory from <strong>200+ GB to under 20 GB</strong></p>
+        </li>
+        <li>
+        <p>Cut runtime from <strong>minutes to under 10 seconds</strong> on <strong>1-5 GB</strong> of data per run through <strong>parallelism</strong>, vectorization, and algorithmic improvements</p>
+        </li>
+        <li>
+        <p>Designed the <strong>concurrent execution model</strong> (<strong>asyncio</strong> plus <strong>process pool</strong>, GIL-aware) to maximize <strong>throughput</strong> under heavy parallel load</p>
+        </li>
+        <li>
+        <p>Built the <strong>PostgreSQL</strong> schema, <strong>Redis</strong> caching, and a <strong>Kafka</strong> producer streaming signals to downstream consumers</p>
+        </li>
+        <li>
+        <p>Ran jobs as Dockerized <strong>Kubernetes</strong> workloads across <strong>GCP</strong> and on-premise <strong>Linux</strong>, with <strong>GitHub Actions</strong> CI/CD and <strong>Grafana</strong></p>
+        </li>
+        </ul>
+        <h2><strong>AcamarAI</strong>, AI Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>8 months</p>
+        <p>Python, PyTorch, computer vision, SAM, Grounding DINO, VLM, LoRA, vLLM, FastAPI</p>
+        <ul>
+        <li>
+        <p>Applied <strong>computer vision</strong> in production, object segmentation with <strong>SAM</strong> and <strong>Grounding DINO</strong>, <strong>ColPali</strong> vision-RAG, and <strong>VLM</strong> document understanding</p>
+        </li>
+        <li>
+        <p>Fine-tuned task-specific models with <strong>LoRA/PyTorch</strong> and prepared datasets to improve accuracy for target tasks (<strong>deep learning</strong>)</p>
+        </li>
+        <li>
+        <p>Served self-hosted <strong>Qwen</strong> models with <strong>vLLM</strong> on a single <strong>A100 80GB</strong> behind an OpenAI-compatible API, tuning <strong>GPU inference</strong> to about <strong>1s TTFT</strong> and <strong>200 tok/s</strong> aggregate throughput</p>
+        </li>
+        <li>
+        <p>Delivered <strong>3 of 14</strong> core AI features end to end, from requirement to production, for <strong>Fortune 500</strong> beta users</p>
+        </li>
+        <li>
+        <p>Integrated models into scalable back-end services with async <strong>FastAPI</strong> and <strong>SSE</strong> streaming, schema-validated through <strong>Instructor/Pydantic</strong>, with <strong>evaluation</strong> harnesses (<strong>recall@k</strong>, <strong>LLM-as-judge</strong>)</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>Programming:</strong> Python (asyncio, multiprocessing), C++ (coursework, competitive programming), SQL, algorithms and data structures</p>
+        <p><strong>Computer Vision &amp; Deep Learning:</strong> PyTorch, SAM, Grounding DINO, object segmentation, ColPali, VLM, LoRA fine-tuning</p>
+        <p><strong>Concurrency &amp; Performance:</strong> asyncio, multiprocessing, GIL-aware concurrency, memory profiling and leak debugging</p>
+        <p><strong>GPU &amp; Inference:</strong> vLLM self-hosted serving on A100, low-latency and high-throughput serving, CUDA kernel basics (self-study)</p>
+        <p><strong>Backend &amp; Distributed Systems:</strong> FastAPI, async APIs, SSE streaming, PostgreSQL, Redis, Kafka, pandas, data pipelines</p>
+        <p><strong>Linux &amp; DevOps:</strong> Linux, Docker, Kubernetes, GCP and on-premise, GitHub Actions CI/CD, Grafana, pytest</p>
+        <p><strong>LLM Systems:</strong> RAG, Qdrant vector search, tool-calling agents, LangChain/LangGraph, Instructor/Pydantic validation</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics &amp; Computer Science (Data Science)</h2>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Sept 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0 (3.74/4.0)</li>
+        </ul>
+    </article>
+</body>
+
+</html>

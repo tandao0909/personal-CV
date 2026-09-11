@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.7/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: AI Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  phone: +84 839 782 709
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Đào Xuân Tân
+      url: https://www.linkedin.com/in/t%C3%A2n-%C4%91%C3%A0o-xu%C3%A2n-9a717b305/
+  sections:
+    summary:
+      - AI Engineer and Software Developer with 1 year of experience building Python internal tools, FastAPI services, data pipelines, and LLM-powered automation. Strong in Pandas, backend APIs, self-hosted AI model, RAG, prompt engineering, Docker, Kubernetes, and CI/CD.
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics and Computer Science, Data Science track
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: 2026-12
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+    experience:
+      - company: Pi Associates
+        position: Software Developer
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh
+        summary: Python, FastAPI, Pandas, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GitHub Actions
+        highlights:
+          - Own core development of an internal Python backtesting platform exposed through APIs for quant researchers and engineers across the company
+          - Built the core engine, FastAPI endpoints, Pandas backtest pipeline, metrics computation, result comparison, and report download workflows
+          - Improved backtest runtime from minutes to under 10 seconds for common runs while processing 1-5 GB of data per run
+          - Supported tens of thousands of daily backtest runs and about 20 internal users through API-driven workflows
+          - Deployed backtests as Dockerized Kubernetes jobs with scheduled pipelines for live runs
+          - Improved reliability through stronger error handling and input validation, reducing failed runs, manual debugging, and broken pipeline cases
+      - company: AcamarAI
+        position: AI Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2026-01
+        location: Ho Chi Minh
+        summary: Python, FastAPI, LLM, VLM, RAG, LangChain, vLLM, PyTorch
+        highlights:
+          - Deployed self-hosted LLM services with vLLM using an OpenAI-compatible API interface for internal AI features
+          - Built LLM workflows with FastAPI, LangChain, RAG, prompt engineering, and evaluation harnesses
+          - Developed 3 of 14 core AI functionalities for Fortune 500 beta users, turning product requirements into production-facing AI workflows
+          - Evaluated LLM/VLM outputs for accuracy, reliability, and response quality, then created repeatable QA checks for AI-generated outputs
+          - Prepared datasets, fine-tuned models, and optimized inference quality for task-specific AI use cases
+    skills:
+      - label: LLM Engineering
+        details: OpenAI, OpenAI-compatible APIs, prompt engineering, RAG, LangChain, vLLM, AI output evaluation
+      - label: Backend & Data
+        details: Python, FastAPI, Pandas, PostgreSQL, Kafka, Redis, API design, data pipelines, workflow automation
+      - label: ML
+        details: PyTorch, TensorFlow, fine-tuning, dataset preparation, NLP, model evaluation
+      - label: DevOps & Workflow
+        details: Git, code review, GitHub Actions, Docker, Kubernetes, CI/CD, agile collaboration
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5)
+design:
+  theme: classic
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    font_size:
+      name: 24pt
+      section_titles: 1.2em
+  header:
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+locale:
+  language: english
+settings:
+  current_date: "2026-06-04"
+  pdf_title: NAME's CV
+  render_command:
+    output_folder: rendercv_output_ai_automation

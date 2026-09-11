@@ -1,0 +1,90 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.7/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: AI Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  phone: +84 839 782 709
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Đào Xuân Tân
+      url: https://www.linkedin.com/in/t%C3%A2n-%C4%91%C3%A0o-xu%C3%A2n-9a717b305/
+  sections:
+    summary:
+      - AI Engineer specializing in production LLM systems across retrieval and search, tool-calling agents, and self-hosted model serving. Backed by strong production Python and backend APIs from high-scale quant-finance infrastructure.
+    experience:
+      - company: AcamarAI
+        position: AI Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2026-01
+        location: Ho Chi Minh
+        summary: RAG, retrieval, LLM agents, Qdrant, LangChain, vLLM, FastAPI, PyTorch
+        highlights:
+          - Built production **RAG and retrieval** over **millions of vectors** in self-hosted **Qdrant**, combining **hybrid** dense and sparse (BM25) search with a **reranking** model that outperformed pure vector search on **recall@k**
+          - Designed ingestion and embedding pipelines using multiple chunking strategies, **BGE** embeddings, and **ColPali** for **vision RAG** over document images
+          - Developed **agentic** LLM workflows on **OpenAI tool calling** and **LangChain**, applying multi-step planning with tools for text processing and internal-DB retrieval
+          - Made tool calls reliable by enforcing schema-validated outputs with **Instructor/Pydantic** and handling retries and malformed arguments
+          - Served self-hosted **Qwen** models with **vLLM** on a single A100 80GB (about 1s TTFT, 200 tok/s aggregate) behind an **OpenAI-compatible API**
+          - Evaluated retrieval and generation with **recall@k** and **LLM-as-judge** harnesses, fine-tuned task-specific models with **LoRA**, and shipped **3 of 14** core AI features for Fortune 500 beta users via **async FastAPI** with **SSE** streaming
+      - company: Pi Associates
+        position: Software Developer (Quant Finance)
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh
+        summary: Python, FastAPI, Pandas, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GCP
+        highlights:
+          - Responsible for an internal Python backtesting package for quant researchers, running tens of thousands of backtests a day
+          - Diagnosed and fixed a critical **memory leak**, cutting peak memory from **200+ GB to under 20 GB**
+          - Reduced backtest runtime from **minutes to under 10 seconds** on **1 to 5 GB** of data per run through **parallelism**, vectorization, and algorithmic improvements
+          - Ran backtests as Dockerized **Kubernetes** jobs across **GCP** and on-premise, with **GitHub Actions** CI/CD and **Grafana** monitoring, plus stronger error handling and input validation to reduce failed runs
+    skills:
+      - label: Retrieval & Search
+        details: Qdrant, hybrid dense + sparse (BM25) retrieval, reranking models, BGE embeddings, ColPali vision RAG, chunking strategies, recall@k evaluation
+      - label: LLM & Agents
+        details: RAG, OpenAI tool/function calling, multi-step planning agents, LangChain, Instructor, prompt engineering, context construction
+      - label: LLM Serving & ML
+        details: vLLM, self-hosted Qwen, OpenAI-compatible APIs, LoRA fine-tuning, LLM-as-judge evaluation, PyTorch, computer vision
+      - label: Backend & APIs
+        details: Python, FastAPI, asyncio, SSE streaming, REST APIs, Pydantic validation, PostgreSQL, Redis, Kafka
+      - label: Infra & DevOps
+        details: Docker, Kubernetes, GCP, on-premise, GitHub Actions CI/CD, Grafana
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5)
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics & Computer Science (Data Science)
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: 2026-12
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+design:
+  theme: classic
+  page:
+    show_top_note: false
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    font_size:
+      name: 24pt
+      section_titles: 1.2em
+  header:
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+locale:
+  language: english
+settings:
+  current_date: "2026-06-23"
+  pdf_title: NAME's CV
+  render_command:
+    output_folder: rendercv_output_zalopay

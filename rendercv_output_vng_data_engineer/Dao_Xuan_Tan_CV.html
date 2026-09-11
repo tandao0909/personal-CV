@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Data engineer with 1+ year building and operating production <strong>Python ETL and batch pipelines</strong> over <strong>financial market and time-series data</strong>, from ingestion and transformation through <strong>PostgreSQL</strong> persistence, <strong>Kafka</strong> streaming, and scheduled containerized workflows with stage dependencies, retries, and failure alerting. Strongest on <strong>SQL</strong>, <strong>data-quality validation</strong>, and production monitoring.</p>
+        <h1>Experience</h1>
+        <h2><strong>Pi Associates</strong>, Software Engineer (Data &amp; Quant Platform)</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>Python, SQL, PostgreSQL, Kafka, Redis, pandas, Docker, Kubernetes, GCP, Grafana</p>
+        <ul>
+        <li>
+        <p>Own core development of an internal <strong>Python</strong> data and backtesting platform serving <strong>20</strong> quant researchers, running <strong>tens of thousands of jobs daily</strong></p>
+        </li>
+        <li>
+        <p>Built the batch <strong>ETL workflow</strong> end to end, ingestion of <strong>financial market and time-series data</strong>, transformation, metrics computation, <strong>reconciliation across runs</strong>, and <strong>report generation</strong>, persisting to <strong>PostgreSQL</strong> with schema design and raw <strong>SQL</strong>, plus <strong>Redis</strong> caching</p>
+        </li>
+        <li>
+        <p>Orchestrated recurring and live workloads as scheduled <strong>Kubernetes</strong> jobs across <strong>GCP</strong> and on-premises with <strong>stage dependencies, retries, and failure alerting</strong>, plus <strong>Grafana</strong> monitoring and input validation that cut failed runs and manual debugging</p>
+        </li>
+        <li>
+        <p>Detected nondeterministic output across identical runs, traced it to a failed deployment serving incorrect data, and added the <strong>data-quality validation and alerting</strong> that now catches that class of failure before results reach users</p>
+        </li>
+        <li>
+        <p>Built and operated a <strong>Kafka</strong> producer streaming trading signals in real time to downstream consumers</p>
+        </li>
+        <li>
+        <p>Cut common <strong>1–5 GB</strong> workloads from minutes to <strong>under 10 seconds</strong> through parallelism and vectorization, and resolved a memory leak that cut peak memory by <strong>an order of magnitude</strong></p>
+        </li>
+        </ul>
+        <h2><strong>AcamarAI</strong>, AI Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>Python, SQL, ingestion pipelines, classification, entity resolution, evaluation</p>
+        <ul>
+        <li>
+        <p>Built ingestion pipelines over <strong>millions of records</strong>, parsing, validating, and normalizing structured and unstructured documents into a self-hosted store</p>
+        </li>
+        <li>
+        <p>Built <strong>classification</strong> and <strong>entity-resolution</strong> workflows combining deterministic rules with <strong>LLMs</strong>, with automated evaluation and human review to catch quality regressions</p>
+        </li>
+        <li>
+        <p>Owned <strong>3</strong> core product features from requirements through rollout for <strong>Fortune 500</strong> beta users</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>Data Engineering:</strong> Python (pandas, asyncio, multiprocessing), SQL, ETL and batch pipelines, ingestion and normalization</p>
+        <p><strong>Databases &amp; Modeling:</strong> PostgreSQL (schema design, raw SQL), Redis, relational and time-series data modeling</p>
+        <p><strong>Workflow &amp; Streaming:</strong> Kubernetes job orchestration (DAG-style stage dependencies, retries, trigger rules, failure branches), Airflow (working knowledge: KubernetesPodOperator, sensors, XCom, catchup/backfill), Kafka streaming</p>
+        <p><strong>Data Quality &amp; Testing:</strong> Input and schema validation, correctness and reconciliation checks, anomaly and silent-failure detection, pytest (unit and integration), Grafana monitoring and alerting</p>
+        <p><strong>Infrastructure:</strong> Docker, Kubernetes, GCP, on-premises, Linux, GitHub Actions CI/CD, Git</p>
+        <p><strong>AI &amp; LLM:</strong> LLM-assisted data processing, RAG and embedding pipelines, self-hosted model serving (vLLM), output evaluation</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics and Computer Science (Data Science)</h2>
+        <p><strong>BSc</strong></p>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Dec 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0 (3.74/4.0). Expected graduation <strong>Dec 2026</strong>, working full-time since June 2025</li>
+        </ul>
+    </article>
+</body>
+
+</html>

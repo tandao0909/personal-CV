@@ -1,0 +1,85 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.7/schema.json
+cv:
+  name: Dao Xuan Tan
+  headline: AI Engineer
+  location: Ho Chi Minh, Vietnam
+  email: tan.daoxuan0909@gmail.com
+  phone: +84 839 782 709
+  social_networks:
+    - network: GitHub
+      username: tandao0909
+  custom_connections:
+    - fontawesome_icon: linkedin
+      placeholder: Đào Xuân Tân
+      url: https://www.linkedin.com/in/t%C3%A2n-%C4%91%C3%A0o-xu%C3%A2n-9a717b305/
+  sections:
+    summary:
+      - AI engineer who builds and ships production agentic systems, multi-step agents and orchestration with LangGraph and LangChain, RAG, and LLM integrations, on a strong Python foundation (async, testing, packaging) with Docker and CI/CD.
+    experience:
+      - company: Pi Associates
+        position: Software Engineer
+        date:
+        start_date: 2026-01
+        end_date: present
+        location: Ho Chi Minh
+        summary: Python, async, FastAPI, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GCP, GitHub Actions
+        highlights:
+          - Main developer responsible for an internal **Python** package, used by about 20 researchers and engineers running **tens of thousands** of runs a day
+          - Strong production **Python**, async work, packaging with **uv**, and a silent memory-leak fix that cut peak memory from **200+ GB to under 20 GB**
+          - Cut runtime from **minutes to under 10 seconds** on **1-5 GB** of data per run through parallelism and vectorization
+          - Shipped to production as Dockerized **Kubernetes** jobs on **GCP**, with **GitHub Actions** CI/CD and **Grafana** monitoring
+      - company: AcamarAI
+        position: AI Engineer
+        date:
+        start_date: 2025-06
+        end_date: 2026-01
+        location: Ho Chi Minh
+        summary: Python, LLM, agents, LangGraph, LangChain, RAG, vLLM
+        highlights:
+          - Designed and shipped **multi-step LLM agents** and orchestration workflows using **LangGraph** and **LangChain**
+          - Integrated and evaluated multiple model providers behind a self-hosted **vLLM** OpenAI-compatible API
+          - Built **RAG** pipelines, prompt engineering, and evaluation harnesses (automated scoring plus human review) for reliable agent behavior
+          - Owned **3** production AI features end to end (of **14** core features) for Fortune 500 beta users
+    skills:
+      - label: Agentic AI
+        details: multi-step agents, LangGraph, LangChain, orchestration, RAG, prompt engineering, output evaluation
+      - label: LLM
+        details: OpenAI / Claude / Gemini ecosystems, vLLM, OpenAI-compatible APIs
+      - label: Backend
+        details: Python (async, testing, packaging via uv), FastAPI, PostgreSQL, Kafka, Redis
+      - label: DevOps
+        details: Docker, Kubernetes, GCP, GitHub Actions CI/CD
+      - label: Languages
+        details: Vietnamese (Native), English (IELTS 6.5)
+    education:
+      - institution: Ho Chi Minh University of Science
+        area: Mathematics and Computer Science, Data Science track
+        degree:
+        date:
+        start_date: 2022-10
+        end_date: 2026-12
+        location: Ho Chi Minh City
+        summary:
+        highlights:
+          - "GPA: 8.74/10.0 (3.74/4.0)"
+design:
+  theme: classic
+  page:
+    top_margin: 0.6in
+    bottom_margin: 0.6in
+    left_margin: 0.6in
+    right_margin: 0.6in
+  typography:
+    font_size:
+      name: 24pt
+      section_titles: 1.2em
+  header:
+    space_below_headline: 0.25cm
+    space_below_connections: 0.25cm
+locale:
+  language: english
+settings:
+  current_date: "2026-06-22"
+  pdf_title: NAME's CV
+  render_command:
+    output_folder: rendercv_output_techtorch

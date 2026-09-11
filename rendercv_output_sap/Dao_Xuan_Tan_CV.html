@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>AI engineer building production LLM systems for legal, IP, and compliance workflows, with hands-on experience in RAG pipelines, vector search, tool-calling agents, and backend API integration. Ship schema-validated, human-reviewed AI automation using Python/FastAPI, OpenAI-compatible APIs, self-hosted models, and reliability-focused engineering practices.</p>
+        <h1>Experience</h1>
+        <h2><strong>AcamarAI</strong>, AI Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>8 months</p>
+        <p>Legal/IP LLM systems, RAG, Qdrant, tool-calling agents, LangChain, Instructor, vLLM, FastAPI</p>
+        <ul>
+        <li>
+        <p>Owned end-to-end <strong>LLM patent drafting and classification</strong> system, one of <strong>3 of 14</strong> core features for <strong>Fortune 500</strong> beta client; generated patent claim and description text, classified technical documents, and turned legal and <strong>IP</strong> requirements into production AI workflow</p>
+        </li>
+        <li>
+        <p>Enforced reliable, well-formed legal output via <strong>schema-validated</strong> generation (<strong>Instructor/Pydantic</strong>); validated quality through <strong>patent and domain-expert human-in-the-loop review</strong> and <strong>LLM-as-judge</strong> evaluation harnesses</p>
+        </li>
+        <li>
+        <p>Built production <strong>RAG and retrieval</strong> over <strong>millions of vectors</strong> in self-hosted <strong>Qdrant</strong>, combining <strong>hybrid</strong> dense and sparse (BM25) search with <strong>reranking</strong> model that outperformed pure vector search on <strong>recall@k</strong> for prior-art-style retrieval across legal and technical corpora</p>
+        </li>
+        <li>
+        <p>Developed <strong>agentic</strong> LLM workflows on <strong>OpenAI tool calling</strong> and <strong>LangChain</strong> with multi-step planning and tools for text processing and internal-DB retrieval; hardened reliability against retries and malformed tool arguments, plus ingestion pipelines using <strong>BGE</strong> embeddings and <strong>ColPali</strong> vision RAG over document images</p>
+        </li>
+        <li>
+        <p>Served self-hosted <strong>Qwen</strong> models with <strong>vLLM</strong> on single A100 80GB behind <strong>OpenAI-compatible API</strong>; shipped features via <strong>async FastAPI</strong> with <strong>SSE</strong> streaming</p>
+        </li>
+        </ul>
+        <h2><strong>Pi Associates</strong>, Software Developer (Quant Finance)</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>6 months</p>
+        <p>Python, FastAPI, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GCP</p>
+        <ul>
+        <li>
+        <p>Main developer of internal <strong>Python</strong> backtesting platform (FastAPI, PostgreSQL, Kafka, Redis) serving about 20 researchers running <strong>tens of thousands</strong> of backtests daily</p>
+        </li>
+        <li>
+        <p>Diagnosed and fixed critical <strong>memory leak</strong>, cutting peak memory from <strong>200+ GB to under 20 GB</strong>; reduced runtime from <strong>minutes to under 10 seconds</strong> on <strong>1-5 GB</strong> per run through <strong>parallelism</strong> and vectorization</p>
+        </li>
+        <li>
+        <p>Ran backtests as Dockerized <strong>Kubernetes</strong> jobs across <strong>GCP</strong> and on-premise, with <strong>GitHub Actions</strong> CI/CD and <strong>Grafana</strong> monitoring</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>LLM &amp; Agents:</strong> RAG, OpenAI tool/function calling, multi-step planning agents, LangChain, Instructor, schema-validated outputs, prompt engineering, LLM-as-judge evaluation, AI-assisted dev tools (Codex, Claude Code, Cursor)</p>
+        <p><strong>Retrieval &amp; Vector DBs:</strong> Qdrant, hybrid dense + sparse (BM25) retrieval, reranking models, BGE and ColPali embeddings, chunking strategies, recall@k</p>
+        <p><strong>LLM Serving &amp; ML:</strong> vLLM, self-hosted Qwen, OpenAI-compatible APIs, LoRA fine-tuning, PyTorch, VLM and document understanding</p>
+        <p><strong>Backend &amp; APIs:</strong> Python, FastAPI, asyncio, SSE streaming, REST APIs, Pydantic validation, PostgreSQL, Redis, Kafka</p>
+        <p><strong>Infra &amp; DevOps:</strong> Docker, Kubernetes, GCP, on-premise, GitHub Actions CI/CD, Grafana</p>
+        <p><strong>Legal/IP Domain:</strong> patent drafting and classification, IP-document RAG, compliance-oriented evaluation and human-in-the-loop review</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics &amp; Computer Science (Data Science)</h2>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Sept 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0 (3.74/4.0)</li>
+        </ul>
+    </article>
+</body>
+
+</html>

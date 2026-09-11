@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Data Scientist building and evaluating ML and Deep Learning models in production, from training and fine-tuning to monitoring for degradation. Experienced with LLM and AI-agent systems, grounded in a strong probability, statistics, and linear algebra foundation from a Mathematics and Computer Science (Data Science) degree, plus production Python and SQL.</p>
+        <h1>Experience</h1>
+        <h2><strong>AcamarAI</strong>, AI Engineer</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>8 months</p>
+        <p>ML/DL modeling, LLM agents, model evaluation, PyTorch, vLLM, RAG, FastAPI</p>
+        <ul>
+        <li>
+        <p>Built, fine-tuned, and shipped task-specific <strong>ML and Deep Learning</strong> models with <strong>PyTorch</strong> and <strong>LoRA</strong>, preparing datasets and optimizing inference quality for production use cases</p>
+        </li>
+        <li>
+        <p>Designed <strong>model evaluation and testing workflows</strong>, measuring quality with <strong>recall@k</strong> and <strong>LLM-as-judge</strong> harnesses plus human-in-the-loop review, gating models before and after deployment</p>
+        </li>
+        <li>
+        <p>Developed <strong>agentic LLM</strong> systems on <strong>OpenAI tool calling</strong> and <strong>LangChain</strong> with multi-step planning, enforcing schema-validated outputs via <strong>Instructor/Pydantic</strong> for reliable tool use</p>
+        </li>
+        <li>
+        <p>Built production <strong>RAG and retrieval</strong> over <strong>millions of vectors</strong> in self-hosted <strong>Qdrant</strong>, combining <strong>hybrid</strong> dense and sparse (BM25) search with a <strong>reranking</strong> model that beat pure vector search on recall@k, plus <strong>ColPali</strong> vision RAG over document images</p>
+        </li>
+        <li>
+        <p>Served self-hosted <strong>Qwen</strong> models with <strong>vLLM</strong> on a single A100 80GB behind an <strong>OpenAI-compatible API</strong>, and shipped <strong>3 of 14</strong> core AI features for Fortune 500 beta users via <strong>async FastAPI</strong> with <strong>SSE</strong> streaming</p>
+        </li>
+        </ul>
+        <h2><strong>Pi Associates</strong>, Software Developer (Quant Finance)</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>7 months</p>
+        <p>Python, SQL, Pandas, PostgreSQL, Kafka, Redis, Docker, Kubernetes, GCP, Grafana</p>
+        <ul>
+        <li>
+        <p>Main developer of an internal <strong>Python</strong> data and backtesting platform used by about 20 researchers, running <strong>tens of thousands</strong> of backtests a day on <strong>1 to 5 GB</strong> of data per run</p>
+        </li>
+        <li>
+        <p>Diagnosed and fixed a silent production <strong>memory leak</strong>, cutting peak memory from <strong>200+ GB to under 20 GB</strong></p>
+        </li>
+        <li>
+        <p>Reduced backtest runtime from <strong>minutes to under 10 seconds</strong> through <strong>parallelism</strong>, vectorization, and algorithmic improvements</p>
+        </li>
+        <li>
+        <p>Worked across <strong>PostgreSQL</strong> (schema design and <strong>SQL</strong> queries), <strong>Redis</strong> caching, and a <strong>Kafka</strong> producer feeding downstream consumers</p>
+        </li>
+        <li>
+        <p>Ran jobs as Dockerized <strong>Kubernetes</strong> workloads across <strong>GCP</strong> and on-premise, with <strong>GitHub Actions</strong> CI/CD and <strong>Grafana</strong> monitoring to track performance and catch degradation, plus stronger error handling and validation to reduce failed runs</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>Machine Learning &amp; Deep Learning:</strong> PyTorch, deep learning, LoRA fine-tuning, model training and evaluation, recall@k, LLM-as-judge, production model monitoring, dataset preparation</p>
+        <p><strong>Math &amp; Statistics:</strong> probability, statistics, linear algebra, applied mathematics</p>
+        <p><strong>LLM, GenAI &amp; Agents:</strong> RAG, retrieval, tool/function-calling agents, multi-step planning, LangChain, prompt engineering, vLLM, self-hosted LLM serving, OpenAI-compatible APIs</p>
+        <p><strong>Programming &amp; Data:</strong> Python, SQL, PostgreSQL, FastAPI, Pandas, Kafka, Redis, data pipelines, REST APIs, Pydantic validation</p>
+        <p><strong>MLOps &amp; Infra:</strong> Docker, Kubernetes, GCP, on-premise, GitHub Actions CI/CD, Grafana</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics &amp; Computer Science (Data Science)</h2>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Dec 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0 (3.74/4.0)</li>
+        </ul>
+    </article>
+</body>
+
+</html>

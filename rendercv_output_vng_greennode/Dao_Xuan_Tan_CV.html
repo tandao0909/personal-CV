@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Dao Xuan Tan's CV</h1>
+        <ul>
+        <li>Phone: +84 839 782 709</li>
+        <li>Email: <a href="mailto:tan.daoxuan0909@gmail.com">tan.daoxuan0909@gmail.com</a></li>
+        <li>Location: Ho Chi Minh, Vietnam</li>
+        <li>GitHub: <a href="https://github.com/tandao0909">tandao0909</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>Engineer for <strong>LLM inference</strong> and <strong>GPU</strong> serving platforms. Served self-hosted models with <strong>vLLM</strong> on <strong>A100</strong> GPUs using <strong>FP8/INT8 quantization</strong>, <strong>continuous batching</strong>, <strong>KV-cache</strong> tuning, <strong>tensor parallelism</strong>, and <strong>multiple replicas behind a load balancer</strong> on bare-metal NVIDIA hosts (about <strong>1s TTFT</strong>, <strong>200 tok/s</strong> aggregate). Now operate a <strong>multi-tenant Kubernetes</strong> compute platform across <strong>GCP</strong> and <strong>on-premise</strong> bare metal at <strong>tens of thousands of jobs a day</strong>, with hands-on <strong>incident response</strong> and <strong>root-cause analysis</strong>.</p>
+        <h1>Experience</h1>
+        <h2><strong>Pi Associates</strong>, Software Engineer, AI &amp; Compute Platform</h2>
+        <p>Ho Chi Minh</p>
+        <p>Jan 2026 – present</p>
+        <p>Kubernetes, Docker, GCP, on-premise bare-metal Linux, Python, asyncio, Grafana, Prometheus, Kafka, PostgreSQL, GitHub Actions</p>
+        <ul>
+        <li>
+        <p>Operate a <strong>multi-tenant</strong> internal <strong>Python</strong> compute platform running <strong>tens of thousands</strong> of backtest and evaluation <strong>jobs a day</strong> for about <strong>20</strong> researchers and engineers, across <strong>GCP</strong> and <strong>on-premise bare-metal Linux</strong></p>
+        </li>
+        <li>
+        <p>Run workloads as Dockerized <strong>Kubernetes</strong> jobs with scheduled pipelines (stage dependencies, retries, failure alerting), <strong>GitHub Actions</strong> CI/CD covering test, build, and deploy, and <strong>Grafana</strong> and <strong>Prometheus</strong> monitoring</p>
+        </li>
+        <li>
+        <p>Handle <strong>production incidents</strong> and <strong>root-cause analysis</strong>, including tracing nondeterministic output across a service boundary to a silently failed deploy that left a stale build serving bad data, then driving it to resolution</p>
+        </li>
+        <li>
+        <p>Diagnosed and fixed a silent production <strong>memory leak</strong> (<strong>aggregate worker peak memory</strong> from <strong>200+ GB to under 20 GB</strong>), profiled the pipeline to cut runtime from <strong>minutes to under 10 seconds</strong> on <strong>1 to 5 GB</strong> per run, and designed the <strong>concurrent execution model</strong> (<strong>asyncio</strong> plus process pool, GIL-aware) for <strong>throughput</strong></p>
+        </li>
+        <li>
+        <p>Built the <strong>PostgreSQL</strong> schema, <strong>Redis</strong> caching, and a <strong>Kafka</strong> producer to downstream consumers, plus data-quality checks that catch silent bad-data failures</p>
+        </li>
+        </ul>
+        <h2><strong>AcamarAI</strong>, AI Engineer, Inference &amp; AI Platform</h2>
+        <p>Ho Chi Minh</p>
+        <p>June 2025 – Jan 2026</p>
+        <p>vLLM, A100, FP8/INT8 quantization, KV-cache, continuous batching, tensor parallelism, bare-metal GPU hosts, LangChain/LangGraph, Qdrant, FastAPI</p>
+        <ul>
+        <li>
+        <p>Served self-hosted <strong>Qwen</strong> models with <strong>vLLM</strong> on an <strong>A100 80GB</strong> behind an <strong>OpenAI-compatible API</strong>, using <strong>FP8/INT8 quantization</strong>, <strong>continuous batching</strong>, and <strong>KV-cache</strong> tuning to reach about <strong>1s TTFT</strong>, <strong>40 tok/s</strong> per request and <strong>200 tok/s</strong> aggregate</p>
+        </li>
+        <li>
+        <p>Scaled serving with <strong>tensor parallelism across GPUs</strong> and <strong>multiple vLLM replicas behind a load balancer</strong> on <strong>bare-metal GPU hosts</strong> (NVIDIA driver, CUDA, container toolkit), tuning serving parameters against <strong>measured GPU utilization</strong></p>
+        </li>
+        <li>
+        <p>Built the <strong>agent platform</strong>: multi-step planning on <strong>OpenAI tool calling</strong> with <strong>LangChain/LangGraph</strong>, retrieval tools over <strong>millions of vectors</strong> in self-hosted <strong>Qdrant</strong> (<strong>hybrid</strong> dense plus BM25, <strong>reranking</strong>), <strong>history compression</strong>, malformed-argument retries, and <strong>schema-validated</strong> output (<strong>Instructor/Pydantic</strong>), served through async <strong>FastAPI</strong> with <strong>SSE</strong></p>
+        </li>
+        <li>
+        <p>Engineered reliably around <strong>non-deterministic model output</strong> with <strong>evaluation harnesses</strong> (<strong>recall@k</strong>, <strong>LLM-as-judge</strong>) and versioned prompts and models under a <strong>regression suite</strong>, owning <strong>3</strong> core AI features end to end for <strong>Fortune 500</strong> beta users</p>
+        </li>
+        </ul>
+        <h1>Skills</h1>
+        <p><strong>LLM Inference &amp; GPU Serving:</strong> vLLM, FP8/INT8 quantization, continuous batching, KV-cache and prefix caching, tensor parallelism, load-balanced multi-replica serving, TTFT and throughput tuning, GPU utilization, NVIDIA driver, CUDA, container toolkit</p>
+        <p><strong>Platform, Kubernetes &amp; CI/CD:</strong> Kubernetes (jobs, manifests, containerized workloads), Docker, GCP and on-premise bare metal, Linux, multi-tenant job platforms, scheduled pipelines with dependencies and retries, GitHub Actions, Python and Bash automation, Git</p>
+        <p><strong>Reliability &amp; Observability:</strong> Grafana and Prometheus monitoring, failure alerting, incident response and root-cause analysis, memory and CPU profiling, data-quality validation, pytest</p>
+        <p><strong>AI Platform &amp; Agents:</strong> Agent orchestration (LangChain/LangGraph, OpenAI tool calling), RAG at scale (Qdrant, hybrid retrieval, reranking, ColPali), Instructor/Pydantic validation, evaluation harnesses, PyTorch, LoRA</p>
+        <p><strong>Distributed Systems &amp; Data:</strong> Kafka, PostgreSQL, Redis, pandas, asyncio and multiprocessing concurrency, FastAPI (async, SSE)</p>
+        <p><strong>Languages:</strong> Vietnamese (Native), English (IELTS 6.5)</p>
+        <h1>Education</h1>
+        <h2><strong>Ho Chi Minh University of Science</strong>, Mathematics &amp; Computer Science (Data Science)</h2>
+        <p><strong>BSc</strong></p>
+        <p>Ho Chi Minh City</p>
+        <p>Oct 2022 – Dec 2026</p>
+        <ul>
+        <li>GPA: 8.74/10.0. Expected graduation <strong>Dec 2026</strong>, working full-time since June 2025</li>
+        </ul>
+    </article>
+</body>
+
+</html>
